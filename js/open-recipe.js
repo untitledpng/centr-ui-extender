@@ -1,5 +1,6 @@
 $(function () {
-    let button = `
+    setTimeout(function () {
+        let button = `
         <div id="openRecipe" style="
             border: 1px solid white;
             padding: 10px 40px;
@@ -14,12 +15,13 @@ $(function () {
             cursor: pointer;
             ">OPEN RECIPE</div>
         `;
-    $("._3xEaKSR").append(button);
+        $("._3xEaKSR").append(button);
 
-    $("#openRecipe").on("click", function () {
-        let recipeId = document.location.href.split("/");
-        recipeId = recipeId[recipeId.length - 1];
+        $("#openRecipe").on("click", function () {
+            let recipeId = document.location.href.split("/");
+            recipeId = recipeId[recipeId.length - 1];
 
-        document.location.href = "https://centr.com/snack/show/" + recipeId + "/a";
-    });
+            document.location.href = "https://centr.com/snack/show/" + recipeId + "/a";
+        });
+    }, 500);
 });
