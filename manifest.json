@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Centr UI extender",
+  "description": "This chrome extension will extend the UI of the Centr web app",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://centr.com/shoppinglist/aisle/*"
+      ],
+      "js": [
+        "js/jquery-3.5.1.js",
+        "js/open-recipe.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://centr.com/snack/show/*"
+      ],
+      "js": [
+        "js/jquery-3.5.1.js",
+        "js/go-back-to-recipe.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_icon": "appicon.png"
+  },
+  "icons": {
+    "16": "appicon.png",
+    "48": "appicon.png",
+    "128": "appicon.png"
+  }
+}
