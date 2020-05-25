@@ -21,6 +21,15 @@
         "js/jquery-3.5.1.js",
         "js/go-back-to-recipe.js"
       ]
+    },
+    {
+      "matches": [
+        "*://centr.com/planner/*"
+      ],
+      "js": [
+        "js/jquery-3.5.1.js",
+        "js/planner.js"
+      ]
     }
   ],
   "permissions": [
