@@ -23,5 +23,5 @@ $(function () {
 
             document.location.href = "https://centr.com/snack/show/" + recipeId + "/a";
         });
-    }, 500);
+    }, 1000);
 });

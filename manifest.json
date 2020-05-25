@@ -10,7 +10,7 @@
       ],
       "js": [
         "js/jquery-3.5.1.js",
-        "js/open-recipe.js"
+        "js/shoppinglist-detail.js"
       ]
     },
     {
@@ -19,7 +19,7 @@
       ],
       "js": [
         "js/jquery-3.5.1.js",
-        "js/go-back-to-recipe.js"
+        "js/snack-detail.js"
       ]
     },
     {
